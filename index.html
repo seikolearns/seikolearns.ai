@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Latif | Trading & AI Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #000;
+      color: #f5f5f5;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5vw;
+      background: transparent;
+      z-index: 2;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .hero-content {
+      z-index: 3;
+      max-width: 50%;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      color: #FFD700;
+    }
+
+    .typing {
+      font-size: 1.8rem;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    .hero-img {
+      max-width: 40%;
+      z-index: 3;
+    }
+
+    .hero-img img {
+      width: 100%;
+      filter: drop-shadow(0 0 20px #FFD700);
+      animation: pulse 2.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+
+    section {
+      padding: 80px 5vw;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .cta {
+      background: #FFD700;
+      color: #000;
+      padding: 16px 32px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #FFD700;
+      transition: transform 0.2s ease, box-shadow 0.2s;
+    }
+
+    .cta:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 30px #FFD700;
+    }
+
+    .card {
+      background: #111;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+      margin-bottom: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px) scale(1.01);
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+    }
+
+    footer {
+      background: #111;
+      padding: 40px 5vw;
+      text-align: center;
+      color: #888;
+    }
+
+    audio {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      z-index: 5;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <header>
+    <div class="hero-content">
+      <h1>Latif Portofolio Trader & Ai Engineering</h1>
+      <div class="typing" id="typed-text"></div>
+      <a href="https://discord.gg/2qwb8Ywcer" target="_blank"><button class="cta">Join My Discord 🔥</button></a>
+    </div>
+    <div class="hero-img">
+      <img src="https://i.ibb.co/dGD4Z7s/futuristic-bot.png" alt="Futuristic Image" />
+    </div>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I'm Latif — a full-time trader, AI enthusiast, and eBook writer. I run 2 TikTok accounts and manage an exclusive Discord server for serious learners. Brutal, focused, and results-driven.</p>
+  </section>
+
+  <section>
+    <h2>Projects & Links</h2>
+    <div class="card">
+      <p><strong>Discord:</strong> <a href="https://discord.gg/2qwb8Ywcer" target="_blank">seikonetsuko's server</a></p>
+      <p><strong>TikTok Trading:</strong> <a href="https://www.tiktok.com/@latif120104" target="_blank">@latif120104</a></p>
+      <p><strong>TikTok AI:</strong> <a href="https://www.tiktok.com/@seikolearns.ai12" target="_blank">@seikolearns.ai12</a></p>
+      <p><strong>Telegram AI:</strong> <a href="https://t.me/seikolearns" target="_blank">seikolearns</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Testimonials</h2>
+    <div class="card">
+      <p>🔥 "Kontennya brutal, nyentil, tapi kena di hati. Gua belajar lebih banyak dari Latif daripada dari guru SMA gua." - Radit</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Latif. Built with precision and rage.</p>
+  </footer>
+
+  <audio controls loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_2933c86758.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script>
+    tsParticles.load("particles-js", {
+      particles: {
+        number: { value: 75 },
+        size: { value: 3 },
+        color: { value: "#FFD700" },
+        links: { enable: true, color: "#FFD700" },
+        move: { enable: true, speed: 1 },
+      },
+      interactivity: {
+        events: { onhover: { enable: true, mode: "repulse" } }
+      }
+    });
+
+    const typedPhrases = ["XAU/USD Trader.", "AI Engineer in Progress.", "Writer of Brutal Truths."];
+    let typedIndex = 0;
+    let charIndex = 0;
+    const typingEl = document.getElementById("typed-text");
+
+    function type() {
+      if (charIndex < typedPhrases[typedIndex].length) {
+        typingEl.textContent += typedPhrases[typedIndex][charIndex];
+        charIndex++;
+        setTimeout(type, 100);
+      } else {
+        setTimeout(erase, 2000);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        typingEl.textContent = typedPhrases[typedIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 50);
+      } else {
+        typedIndex = (typedIndex + 1) % typedPhrases.length;
+        setTimeout(type, 500);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      if (typedPhrases.length) type();
+    });
+  </script>
+
+</body>
+</html>
